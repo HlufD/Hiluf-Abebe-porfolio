@@ -6,12 +6,12 @@ import {
   FaInstagram,
   FaHome,
   FaUser,
-  FaBook,
-  FaList,
-  FaVoicemail,
 } from "react-icons/fa";
-import { GiMailbox } from "react-icons/gi";
+import { AiOutlineProject, AiFillFileText } from "react-icons/ai";
+import { MdOutlineLocalPostOffice } from "react-icons/md";
 
+import NavLink from "./NavLink";
+import SocilaMideaLink from "./SocilaMideaLink";
 import("./SideBar.style.css");
 
 function SideBar() {
@@ -27,45 +27,18 @@ function SideBar() {
         </div>
         <h3 className="sidebar-name">Hluf Abebe</h3>
         <div className="sidebar-social-midea-link">
-          <a href="#" className="social-icon-containare">
-            <FaFacebook className="social-icon" />
-          </a>
-          <a href="#" className="social-icon-containare">
-            <FaLinkedin className="social-icon" />
-          </a>
-          <a href="#" className="social-icon-containare">
-            <FaTelegram className="social-icon" />
-          </a>
-          <a href="#" className="social-icon-containare">
-            <FaGithub className="social-icon" />
-          </a>
-          <a href="#" className="social-icon-containare">
-            <FaInstagram className="social-icon" />
-          </a>
+          <SocilaMideaLink linkto={"#"} Icon={FaFacebook} />
+          <SocilaMideaLink linkto={"#"} Icon={FaLinkedin} />
+          <SocilaMideaLink linkto={"#"} Icon={FaTelegram} />
+          <SocilaMideaLink linkto={"#"} Icon={FaGithub} />
+          <SocilaMideaLink linkto={"#"} Icon={FaInstagram} />
         </div>
       </div>
-      <div className="sidebar-nav">
-        <div className="nav-container">
-          <FaHome className="nav-icon" />
-          <a href="#">Home</a>
-        </div>
-        <div className="nav-container">
-          <FaUser className="nav-icon" />
-          <a href="#">About</a>
-        </div>
-        <div className="nav-container">
-          <FaBook className="nav-icon" />
-          <a href="#">Resume</a>
-        </div>
-        <div className="nav-container">
-          <FaList className="nav-icon" />
-          <a href="#">Portfolio</a>
-        </div>
-        <div className="nav-container">
-          <GiMailbox className="nav-icon" />
-          <a href="#">Contact</a>
-        </div>
-      </div>
+      <NavLink Icon={FaHome} text={"Home"} linkto={"#"} />
+      <NavLink Icon={FaUser} text={"About"} linkto={"#"} />
+      <NavLink Icon={AiFillFileText} text={"Resume"} linkto={"#"} />
+      <NavLink Icon={AiOutlineProject} text={"Portfolio"} linkto={"#"} />
+      <NavLink Icon={MdOutlineLocalPostOffice} text={"Contact"} linkto={"#"} />
     </div>
   );
 }

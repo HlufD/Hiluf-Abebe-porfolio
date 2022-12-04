@@ -2,6 +2,7 @@
   width: 84%;
   background-color: #040b14;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: none;
 }
 
 .sidebar-info {

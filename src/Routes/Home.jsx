@@ -11,9 +11,12 @@ function Home() {
     setToggel(!toggel);
   }
 
+  function togleSideBar() {
+    setOpenSideBar(true);
+  }
   return (
     <div className="home">
-      <SideBar />
+      <SideBar toggel={toggel} />
       <div className="hamburger-container">
         {toggel ? (
           <AiOutlineClose className="icon" onClick={onClickHandler} />

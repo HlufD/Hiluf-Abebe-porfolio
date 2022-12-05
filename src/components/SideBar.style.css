@@ -1,10 +1,13 @@
 .side-bar {
+  transform: translateX(-330px);
+  transition: all ease-in-out 0.4s;
+}
+.showSidebar {
   width: 84%;
   background-color: #040b14;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: none;
+  transform: translateX(0);
 }
-
 .sidebar-info {
   color: white;
   min-height: 30%;

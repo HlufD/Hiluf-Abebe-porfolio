@@ -9,18 +9,20 @@ import {
 } from "react-icons/fa";
 import { AiOutlineProject, AiFillFileText } from "react-icons/ai";
 import { MdOutlineLocalPostOffice } from "react-icons/md";
-
+import classNames from "classnames";
 import NavLink from "./NavLink";
 import SocilaMideaLink from "./SocilaMideaLink";
+
 import("./SideBar.style.css");
 
-function SideBar() {
+function SideBar({ toggel }) {
+  console.log(toggel);
   return (
-    <div className="side-bar">
+    <div className={classNames("side-bar", { showSidebar: toggel === true })}>
       <div className="sidebar-info">
         <div className="sidebar-img-container">
           <img
-            src="img/hluf.JPG"
+            src="img/back.jpg"
             alt="this was an image"
             className="sidebar-img"
           />

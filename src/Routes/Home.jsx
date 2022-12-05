@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import SideBar from "../components/SideBar";
 import("./Home.style.css");
-import { FaHamburger, FaWindowClose } from "react-icons/fa";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 function Home() {
   const [toggel, setToggel] = useState(false);
@@ -11,14 +11,17 @@ function Home() {
     setToggel(!toggel);
   }
 
+  function togleSideBar() {
+    setOpenSideBar(true);
+  }
   return (
     <div className="home">
-      <SideBar />
+      <SideBar toggel={toggel} />
       <div className="hamburger-container">
         {toggel ? (
-          <FaWindowClose className="icon" onClick={onClickHandler} />
+          <AiOutlineClose className="icon" onClick={onClickHandler} />
         ) : (
-          <FaHamburger className="icon" onClick={onClickHandler} />
+          <AiOutlineMenu className="icon" onClick={onClickHandler} />
         )}
       </div>
     </div>

@@ -1,6 +1,9 @@
 .side-bar {
   transform: translateX(-330px);
   transition: all ease-in-out 0.4s;
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
 }
 .showSidebar {
   width: 84%;
@@ -40,7 +43,7 @@
 .sidebar-social-midea-link {
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin-top: 2rem;
   width: 100%;
 }
 

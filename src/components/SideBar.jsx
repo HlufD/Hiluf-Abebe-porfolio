@@ -16,7 +16,6 @@ import SocilaMideaLink from "./SocilaMideaLink";
 import("./SideBar.style.css");
 
 function SideBar({ toggel }) {
-  console.log(toggel);
   return (
     <div className={classNames("side-bar", { showSidebar: toggel === true })}>
       <div className="sidebar-info">

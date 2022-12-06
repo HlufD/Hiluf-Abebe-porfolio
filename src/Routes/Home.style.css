@@ -1,7 +1,7 @@
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url(../../public/img/comp.jpg);
+  background-image: url(/img/comp.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

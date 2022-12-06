@@ -1,5 +1,4 @@
 import Home from "./Routes/Home";
-
 import("./App.style.css");
 function App() {
   return (

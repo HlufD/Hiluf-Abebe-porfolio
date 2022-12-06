@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 import SideBar from "../components/SideBar";
 import("./Home.style.css");
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -23,7 +24,13 @@ function Home() {
             loop: true,
           }}
         />
-        <button className="download">Download Cv</button>
+        <motion.button
+          initial={{ x: -100, y: -100 }}
+          animate={{ x: 0, y: 0 }}
+          className="download"
+        >
+          Download Cv
+        </motion.button>
       </div>
       <div className="hamburger-container">
         {toggel ? (

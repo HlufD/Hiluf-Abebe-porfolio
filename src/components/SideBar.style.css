@@ -1,15 +1,15 @@
 .side-bar {
   transform: translateX(-330px);
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.8s;
   position: fixed;
   height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 100;
+  background-color: #040b14;
   /* padding: 40px 0 40 0; */
 }
 .showSidebar {
-  width: 84%;
-  background-color: #040b14;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 60%;
   transform: translateX(0);
 }
 .sidebar-info {
@@ -92,4 +92,11 @@
 .nav-icon {
   color: rgb(106, 102, 102);
   font-size: 1.2rem;
+}
+
+@media (min-width: 720px) {
+  .side-bar {
+    width: 20%;
+    transform: translateX(0);
+  }
 }

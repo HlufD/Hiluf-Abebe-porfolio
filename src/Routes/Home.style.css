@@ -35,7 +35,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  color: rgb(211, 211, 211);
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -55,4 +55,10 @@
   background-color: rgb(31, 143, 217);
   color: #fff;
   border-radius: 5px;
+}
+
+@media (min-width: 720px) {
+  .hamburger-container {
+    display: none;
+  }
 }

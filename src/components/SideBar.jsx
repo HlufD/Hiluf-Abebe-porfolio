@@ -8,7 +8,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { AiOutlineProject, AiFillFileText } from "react-icons/ai";
-import { MdOutlineLocalPostOffice } from "react-icons/md";
+import { MdOutlineLocalPostOffice, MdComputer } from "react-icons/md";
 import classNames from "classnames";
 import NavLink from "./NavLink";
 import SocilaMideaLink from "./SocilaMideaLink";
@@ -39,6 +39,7 @@ function SideBar({ toggel }) {
       <NavLink Icon={FaUser} text={"About"} linkto={"#"} />
       <NavLink Icon={AiFillFileText} text={"Resume"} linkto={"#"} />
       <NavLink Icon={AiOutlineProject} text={"Portfolio"} linkto={"#"} />
+      <NavLink Icon={MdComputer} text={"Skills"} linkto={"#"} />
       <NavLink Icon={MdOutlineLocalPostOffice} text={"Contact"} linkto={"#"} />
     </div>
   );

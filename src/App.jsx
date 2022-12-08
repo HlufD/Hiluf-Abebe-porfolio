@@ -1,15 +1,39 @@
-import { animate, motion } from "framer-motion";
-function App() {
+import { useState } from "react";
+import Counter from "./Comp/Counter";
+
+function NameList() {
+  const [list, setlist] = useState(["Hluf", "Abebe", "Derbew"]);
+  let [name, setName] = useState("");
+
+  function addlistList() {
+    setlist([...list, name]);
+    setName("");
+  }
+
   return (
     <div>
-      <motion.button
-        className="btn"
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 40, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 1 }}
-      >
-        Click me
-      </motion.button>
+      <ul>
+        {list.map((list, index) => {
+          return <li key={index}>{list}</li>;
+        })}
+      </ul>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <button className="btn" onClick={addlistList}>
+        Add Name
+      </button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <Counter />
+      <NameList />
     </div>
   );
 }

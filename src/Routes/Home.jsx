@@ -2,7 +2,6 @@ import { useState } from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import SideBar from "../components/SideBar";
-import("./Home.style.css");
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 function Home() {
@@ -25,8 +24,9 @@ function Home() {
           }}
         />
         <motion.button
-          initial={{ x: -100, y: -100 }}
-          animate={{ x: 0, y: 0 }}
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           className="download"
         >
           Download Cv

@@ -47,8 +47,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  /* border: 1px solid white; */
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .social-icon-containare {
@@ -77,13 +76,19 @@
 .nav-container {
   color: white;
   width: 50%;
-  margin: 1rem 0;
+  margin: 0.6rem 0;
   display: flex;
   padding: 10px 0;
   align-items: center;
 }
+.nav-container:hover > a {
+  color: white;
+}
+.nav-container:hover > .nav-icon {
+  color: rgb(31, 143, 217);
+}
 .nav-container a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(239, 239, 239, 0.8);
   margin-left: 8%;
   text-decoration: none;
   font-size: small;

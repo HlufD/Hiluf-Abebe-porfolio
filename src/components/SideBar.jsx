@@ -4,16 +4,17 @@ import {
   FaLinkedin,
   FaGithub,
   FaInstagram,
-  FaHome,
   FaUser,
 } from "react-icons/fa";
-import { AiOutlineProject, AiFillFileText } from "react-icons/ai";
-import { MdOutlineLocalPostOffice, MdComputer } from "react-icons/md";
+import {
+  AiOutlineProject,
+  AiFillFileText,
+  AiTwotoneHome,
+} from "react-icons/ai";
+import { MdOutlineLocalPostOffice, MdComputer, MdHome } from "react-icons/md";
 import classNames from "classnames";
 import NavLink from "./NavLink";
 import SocilaMideaLink from "./SocilaMideaLink";
-
-import("./SideBar.style.css");
 
 function SideBar({ toggel }) {
   return (
@@ -35,7 +36,7 @@ function SideBar({ toggel }) {
           <SocilaMideaLink linkto={"#"} Icon={FaInstagram} />
         </div>
       </div>
-      <NavLink Icon={FaHome} text={"Home"} linkto={"#"} />
+      <NavLink Icon={AiTwotoneHome} text={"Home"} linkto={"#"} />
       <NavLink Icon={FaUser} text={"About"} linkto={"#"} />
       <NavLink Icon={AiFillFileText} text={"Resume"} linkto={"#"} />
       <NavLink Icon={AiOutlineProject} text={"Portfolio"} linkto={"#"} />

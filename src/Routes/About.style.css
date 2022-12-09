@@ -1,0 +1,49 @@
+.About {
+  min-height: 100%;
+  width: auto;
+  border: 1px solid red;
+  margin-top: 30px;
+  color: #272829;
+  padding: 10px;
+}
+.about-title {
+  font-size: 2rem;
+  border-bottom: 5px solid rgb(31, 143, 217);
+  width: fit-content;
+  padding-bottom: 0.6rem;
+}
+.about-text,
+.about-resume {
+  padding: 25px 0;
+  line-height: 1.5rem;
+  font-weight: lighter;
+}
+.about-img-con {
+  width: 360px;
+  height: 300px;
+  margin: 20px 0;
+  border: 1px solid green;
+}
+.about-img-con img {
+  width: 330px;
+  height: 100%;
+  padding: 15px;
+}
+
+.about-details {
+  border: 1px solid purple;
+}
+
+.about-resume {
+  font-size: 2rem;
+  border-bottom: 5px solid rgb(31, 143, 217);
+  width: fit-content;
+  padding-bottom: 0.6rem;
+}
+
+@media (min-width: 720px) {
+  .About {
+    width: 80%;
+    margin-left: 20%;
+  }
+}

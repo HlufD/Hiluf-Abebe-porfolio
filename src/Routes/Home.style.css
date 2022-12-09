@@ -50,11 +50,15 @@
 .download {
   padding: 0.5rem 1rem;
   margin-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border: none;
   background-color: rgb(31, 143, 217);
   color: #fff;
   border-radius: 5px;
+  transition: all ease-in-out 0.6s;
+}
+.download:hover {
+  background-color: rgb(84, 179, 243);
 }
 
 @media (min-width: 720px) {

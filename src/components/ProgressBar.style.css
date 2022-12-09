@@ -1,0 +1,20 @@
+.proress-bar {
+  padding: 10px;
+}
+.proress-bar .labele {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  font-size: small;
+}
+.proress-bar .actual-progress-con {
+  height: 10px;
+  background-color: rgb(247, 240, 240);
+}
+.proress-bar .actual-progress {
+  background-color: rgb(31, 143, 217);
+  height: 100%;
+}

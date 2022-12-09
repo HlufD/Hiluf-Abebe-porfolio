@@ -1,12 +1,13 @@
 .About {
   min-height: 100%;
   width: auto;
-  border: 1px solid red;
   margin-top: 30px;
-  color: #272829;
+  font-weight: lighter;
+  color: black;
   padding: 10px;
 }
 .about-title {
+  color: rgb(50, 50, 102);
   font-size: 2rem;
   border-bottom: 5px solid rgb(31, 143, 217);
   width: fit-content;
@@ -22,25 +23,53 @@
   width: 360px;
   height: 300px;
   margin: 20px 0;
-  border: 1px solid green;
 }
 .about-img-con img {
   width: 330px;
   height: 100%;
   padding: 15px;
 }
-
 .about-details {
-  border: 1px solid purple;
+  padding: 10px;
 }
-
+.About-intro {
+  color: rgb(50, 50, 102);
+  font-size: 2rem;
+  width: fit-content;
+  padding-bottom: 0.6rem;
+  font-weight: bold;
+}
+.About-me {
+  line-height: 1.5rem;
+  margin: 15px 0;
+}
 .about-resume {
+  color: rgb(50, 50, 102);
   font-size: 2rem;
   border-bottom: 5px solid rgb(31, 143, 217);
   width: fit-content;
   padding-bottom: 0.6rem;
+  font-weight: bold;
 }
-
+.about-details ul {
+  list-style: none;
+}
+.about-details ul li {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.about-details ul li span {
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+.about-icon {
+  color: rgb(31, 143, 217);
+  font-size: 1.5rem;
+}
+.skills {
+  margin-top: 1.5rem;
+}
 @media (min-width: 720px) {
   .About {
     width: 80%;

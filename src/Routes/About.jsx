@@ -1,107 +1,85 @@
+import { FaAngleRight } from "react-icons/fa";
+import ProgressBar from "../components/ProgressBar";
+
 function About() {
   return (
     <div className="About" id="About">
       <h3 className="about-title">About</h3>
       <p className="about-text">
         Enthusiastic Electrical and Computer Engineering graduate from
-        University of Gondar (CGAP 3.05), with clear understanding of object
-        oriented programing, web development and embedded systems. Motivated to
-        learn, grow and excel in Electrical, Computer Engineering and other
-        related fields.
+        University of Gondar, with clear understanding of object oriented
+        programing, web development and embedded systems. Motivated to learn,
+        grow and excel in Electrical, Computer Engineering and other related
+        fields.
       </p>
       <div className="about-img-con">
         <img src="./img/programming.svg" alt="img here" />
       </div>
       <div className="about-details">
-        <h3> Fullstack Developer</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates,
-          nostrum culpa est eaque ea amet aliquam quae quidem quo blanditiis,
-          praesentium?
+        <h3 className="About-intro"> Fullstack Developer</h3>
+        <p className="About-me">
+          I am a Fullstack web developer with hands on experience with
+          developing static and dynaminy websites and web apps with the current
+          web techonlogies.
         </p>
         <ul>
-          <li>Bithday:12-12-2012</li>
-          <li>website:www.hlufabebe.com</li>
-          <li>Phone: 0937941318</li>
-          <li>City: Addis Ababa</li>
-          <li>Age:23</li>
-          <li>Dergree:Bsc</li>
-          <li>email:hlufabebe2015@gmail.com</li>
-          <li>Freelance:Available</li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>Bithday:</span>
+            12-12-2012
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>website:</span>
+            www.hlufabebe.com
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>Phone:</span> 0937941318
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>City:</span>Addis Ababa
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>Age:</span>
+            23
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>Dergree:</span>
+            Bsc
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>email:</span>
+            hlufabebe2015@gmail.com
+          </li>
+          <li>
+            <FaAngleRight className="about-icon" />
+            <span>Freelance: </span>
+            Available
+          </li>
         </ul>
       </div>
-      <div>
-        <h3>Skills</h3>
-        <div>
-          <label for="Html">HTML:</label>
-
-          <progress id="Html" max="100" value="90">
-            90%
-          </progress>
-        </div>
-        <div>
-          <label for="Css">CSS:</label>
-
-          <progress id="Css" max="100" value="90">
-            80%
-          </progress>
-        </div>
-        <div>
-          <label for="javaScript">javaScript:</label>
-
-          <progress id="javaScript" max="100" value="90">
-            80%
-          </progress>
-        </div>
-        <div>
-          <label for="TypeScipt">TypeScipt:</label>
-
-          <progress id="TypeScipt" max="100" value="50">
-            50%
-          </progress>
-        </div>
-        <div>
-          <label for="NodeJs">NodeJs:</label>
-
-          <progress id="NodeJs" max="100" value="60">
-            60%
-          </progress>
-        </div>
-        <div>
-          <label for="ReactJs">ReactJs:</label>
-
-          <progress id="ReactJs" max="100" value="60">
-            60%
-          </progress>
-        </div>
-        <div>
-          <label for="Git">Git:</label>
-
-          <progress id="Git" max="100" value="60">
-            60%
-          </progress>
-        </div>
-        <div>
-          <label for="Mysql">Mysql:</label>
-
-          <progress id="Mysql" max="100" value="60">
-            60%
-          </progress>
-        </div>
-        <div>
-          <label for="MongoDb">MongoDb:</label>
-
-          <progress id="MongoDb" max="100" value="60">
-            60%
-          </progress>
-        </div>
-        <div>
-          <label for="">:</label>
-
-          <progress id="" max="100" value="60">
-            60%
-          </progress>
-        </div>
+      <div className="skills">
+        <h3 className="about-title">Skills</h3>
+        <p className="About-me">
+          I have different level of skill on the following technologies and i
+          have worked on them for the last couple of years.if you want to hire
+          me you can see the potfolio page.
+        </p>
+        <ProgressBar lebele={"html"} percent={"100%"} />
+        <ProgressBar lebele={"css"} percent={"90%"} />
+        <ProgressBar lebele={"javaScript"} percent={"80%"} />
+        <ProgressBar lebele={"typeScript"} percent={"80%"} />
+        <ProgressBar lebele={"ReactJs"} percent={"80%"} />
+        <ProgressBar lebele={"NodeJs"} percent={"80%"} />
+        <ProgressBar lebele={"MonoDb"} percent={"80%"} />
+        <ProgressBar lebele={"Mysql"} percent={"70%"} />
+        <ProgressBar lebele={"Git"} percent={"70%"} />
+        <ProgressBar lebele={"php"} percent={"50%"} />
       </div>
       <div>
         <h3 className="about-resume">Resume</h3>

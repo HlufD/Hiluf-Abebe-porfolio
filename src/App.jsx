@@ -1,81 +1,44 @@
-import { useState, useReducer } from "react";
+import { useState, useMemo } from "react";
+let render = 0;
+function SortedList({ list }) {
+  console.log("function rendererd");
 
-function UserForm() {
-  const [state, dispach] = useReducer(
-    (state, action) => {
-      return { ...state, ...action };
-    },
-    {
-      first: "",
-      last: "",
-    }
-  );
+  const sortedList = useMemo(() => {
+    console.log("Runnig sort", render++);
+    return [...list].sort();
+  }, [list]);
+
   return (
     <div>
-      <input
-        type="text"
-        value={state.first}
-        onChange={(e) => dispach({ first: e.target.value })}
-      />
-      <input
-        type="text"
-        value={state.last}
-        onChange={(e) => dispach({ last: e.target.value })}
-      />
-      <p>{state.first}</p>
-      <p>{state.last}</p>
-    </div>
-  );
-}
-
-function NameList() {
-  const [state, dispach] = useReducer(
-    (state, action) => {
-      switch (action.type) {
-        case "SET_NAME":
-          return { ...state, name: action.payload };
-        case "ADD_NAME":
-          return {
-            ...state,
-            names: [...state.names, action.payload],
-            name: "",
-          };
-      }
-    },
-    {
-      names: [],
-      name: "",
-    }
-  );
-
-  return (
-    <div className="App">
-      <input
-        type="text"
-        value={state.name}
-        onChange={(e) => dispach({ type: "SET_NAME", payload: e.target.value })}
-      />
-      <button
-        onClick={() => dispach({ type: "ADD_NAME", payload: state.name })}
-      >
-        Add Name
-      </button>
-      {state.names.length === 0 ? (
-        <p>Empty Name List</p>
-      ) : (
-        state.names.map((name, index) => <p key={index}>{name}</p>)
-      )}
+      <p>{list.join(",")}</p>
+      <p>{sortedList.join(",")}</p>
     </div>
   );
 }
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  // example one
+  const [numbers] = useState([10, 12, 13]);
+  const total = useMemo(() => {
+    return numbers.reduce((acc, number) => acc + number, 0);
+  }, [numbers]);
+
+  //example 2
+  // the array is allrady sorted so it is not good to do the sort evry time the state changes or component rerenderd
+  const Names = ["Abebe", "Hluf", "Zelalem"];
+
   return (
-    <>
-      <UserForm />
-      <NameList />
-    </>
+    <div>
+      <p>{total}</p>
+      <p>{count}</p>
+      <SortedList list={Names} />
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
   );
 }
 
 export default App;
+
+//usememo uses the concept of memoazation or uses calculated value unless the dependacy changes in somehow

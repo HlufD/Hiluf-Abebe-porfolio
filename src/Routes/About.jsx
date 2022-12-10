@@ -1,4 +1,5 @@
 import { FaAngleRight } from "react-icons/fa";
+import List from "../components/List";
 import ProgressBar from "../components/ProgressBar";
 
 function About() {
@@ -23,44 +24,14 @@ function About() {
           web techonlogies.
         </p>
         <ul>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>Bithday:</span>
-            12-12-2012
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>website:</span>
-            www.hlufabebe.com
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>Phone:</span> 0937941318
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>City:</span>Addis Ababa
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>Age:</span>
-            23
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>Dergree:</span>
-            Bsc
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>email:</span>
-            hlufabebe2015@gmail.com
-          </li>
-          <li>
-            <FaAngleRight className="about-icon" />
-            <span>Freelance: </span>
-            Available
-          </li>
+          <List text={"Birthday"} value={"13-13-2043"} />
+          <List text={"website"} value={"www.hlufabebe.com"} />
+          <List text={"Phone"} value={"0937941318"} />
+          <List text={"City"} value={"Addis Ababa"} />
+          <List text={"Age"} value={"23"} />
+          <List text={"Degree"} value={"Bsc"} />
+          <List text={"email"} value={"hlufabebe2015@gmail.com"} />
+          <List text={"Freelance"} value={"Available"} />
         </ul>
       </div>
       <div className="skills">

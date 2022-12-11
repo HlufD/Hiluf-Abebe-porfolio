@@ -38,7 +38,7 @@ function SideBar({ toggel }) {
       </div>
       <NavLink Icon={AiTwotoneHome} text={"Home"} linkto={"#"} />
       <NavLink Icon={FaUser} text={"About"} linkto={"#About"} />
-      <NavLink Icon={AiFillFileText} text={"Resume"} linkto={"#"} />
+      <NavLink Icon={AiFillFileText} text={"Resume"} linkto={"#resume"} />
       <NavLink Icon={AiOutlineProject} text={"Portfolio"} linkto={"#"} />
       <NavLink Icon={MdComputer} text={"Skills"} linkto={"#"} />
       <NavLink Icon={MdOutlineLocalPostOffice} text={"Contact"} linkto={"#"} />

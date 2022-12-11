@@ -15,7 +15,7 @@ function Home() {
     <div className="home">
       <SideBar toggel={toggel} />
       <div className="overlay">
-        <span className="im">I'm</span>
+        <span className="im">Hluf Abebe</span>
         <Typewriter
           options={{
             strings: ["frontend web developer", "backend web developer"],

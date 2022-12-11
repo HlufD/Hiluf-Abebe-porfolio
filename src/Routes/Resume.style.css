@@ -1,0 +1,75 @@
+.resume {
+  margin-top: 1rem;
+  padding: 10px;
+}
+.about-resume {
+  color: rgb(50, 50, 102);
+  font-size: 2rem;
+  border-bottom: 3px solid rgb(31, 143, 217);
+  width: fit-content;
+  padding-bottom: 0.6rem;
+  font-weight: bold;
+}
+.resume-intro {
+  line-height: 1.5rem;
+  margin: 15px 0;
+}
+.sumary {
+  margin: 1.4rem 0;
+}
+.section-title {
+  font-size: 1.625rem;
+  color: rgb(50, 50, 102);
+  margin-bottom: 0.6rem;
+}
+.wraper-sumary {
+  border-left: 2px solid rgb(50, 50, 102);
+  margin-bottom: -5px;
+}
+.resume-title-wrapper {
+  margin-bottom: -3px;
+  margin-left: -6.8px;
+  min-width: 60%;
+  display: flex;
+  align-items: center;
+}
+.resume-title-wrapper p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+.circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(50, 50, 102);
+  border-radius: 50%;
+}
+.sumary-about-me {
+  padding: 1.3rem;
+}
+.sumary-about-me p {
+  margin-bottom: 0.6rem;
+}
+.sumary-about-me ul {
+  margin-left: 1.3rem;
+  margin-top: 1rem;
+}
+.sumary-about-me ul li {
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+.from {
+  background-color: #e4edf9;
+  width: fit-content;
+  padding: 0.4rem 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 720px) {
+  .resume {
+    width: 80%;
+    margin-left: 20%;
+  }
+}

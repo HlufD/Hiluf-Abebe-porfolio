@@ -4,12 +4,14 @@
   margin-top: 30px;
   font-weight: lighter;
   color: black;
+}
+.more-about {
   padding: 10px;
 }
 .about-title {
   color: rgb(50, 50, 102);
   font-size: 2rem;
-  border-bottom: 5px solid rgb(31, 143, 217);
+  border-bottom: 3px solid rgb(31, 143, 217);
   width: fit-content;
   padding-bottom: 0.6rem;
 }
@@ -43,14 +45,7 @@
   line-height: 1.5rem;
   margin: 15px 0;
 }
-.about-resume {
-  color: rgb(50, 50, 102);
-  font-size: 2rem;
-  border-bottom: 5px solid rgb(31, 143, 217);
-  width: fit-content;
-  padding-bottom: 0.6rem;
-  font-weight: bold;
-}
+
 .about-details ul {
   list-style: none;
 }
@@ -69,7 +64,11 @@
 }
 .skills {
   margin-top: 1.5rem;
+  background-color: rgb(234, 251, 251);
+  width: 100%;
+  padding: 10px;
 }
+
 @media (min-width: 720px) {
   .About {
     width: 80%;

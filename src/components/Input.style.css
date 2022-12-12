@@ -1,0 +1,12 @@
+.input-wrapper{
+
+    margin-top: .6rem;
+}
+.input-wrapper label{
+display: block;
+}
+.input-wrapper input{
+    width:100%;
+    height: 30px;
+    margin-top: .5rem;
+}

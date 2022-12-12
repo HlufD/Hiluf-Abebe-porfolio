@@ -1,0 +1,72 @@
+.contact{
+    padding: 30px 20px;
+    border: 1px solid red; 
+}
+
+.card-container{
+    margin-top: 1.4rem;
+}
+.intro{
+    margin-top: 1.4rem;
+}
+.right{
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-shadow: 2px 7px 10px 2px rgba(162, 158, 158, 0.75);
+padding:1.3rem 1rem;
+margin-top: 2rem;
+}
+
+.one-row{
+    display: flex;
+    align-items: center;
+}
+.icon-container{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(31, 143, 217);
+    background-color: rgb(194, 248, 248);
+    font-size: 1.3em;
+}
+.txt-info{
+    margin-left: 1rem;
+    line-height: 1.8rem;
+}
+
+.map{
+    width:100%;
+    margin-top: 1rem;
+    padding: 20px 0;
+}
+
+#message{
+    width: 60%;
+}
+
+.wrapper-all{
+    margin: 0 auto;
+}
+         
+.btn{
+    padding: .4rem 1.3rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+     margin-left: 2rem;
+     margin-top: 1.6rem;
+    width: 70%;
+    border: none;
+    background-color: rgb(31, 143, 217);
+    color: white;
+}
+
+@media (min-width: 720px) {
+    .contact {
+      width: 80%;
+      margin-left: 20%;
+    }
+  }

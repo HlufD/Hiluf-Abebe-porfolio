@@ -12,3 +12,18 @@
   border: 1px solid red;
   height: 100px;
 }
+
+.footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+  padding: 10px;
+}
+.copy {
+  display: flex;
+  align-items: center;
+}

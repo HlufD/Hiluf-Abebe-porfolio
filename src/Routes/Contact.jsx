@@ -3,7 +3,7 @@ import Input from "../components/Input";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h3 className="about-title">Contact</h3>
       <p className="intro">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
@@ -53,8 +53,8 @@ const Contact = () => {
         </div>
         <form className="right">
           <div className="wrapper-all">
-            <Input label="Your Name" linkto="name" type="text" />
-            <Input label="Your Email" linkto="email" type="email" />
+            <Input label="Full Name" linkto="name" type="text" />
+            <Input label="Email" linkto="email" type="email" />
             <Input label="Subject" linkto="subject" type="text" />
             <div className="input-wrapper">
               <label htmlFor="#message" style={{ marginBottom: ".4rem" }}>

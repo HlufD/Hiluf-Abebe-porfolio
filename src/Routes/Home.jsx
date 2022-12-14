@@ -3,14 +3,17 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import SideBar from "../components/SideBar";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { myContext } from "../context/myContext";
 function Home() {
-  const [toggel, setToggel] = useState(false);
+  const context = useContext(myContext);
+  const { toggle, setToggle } = context;
+
   function onClickHandler() {
-    setToggel(!toggel);
+    setToggle(!toggle);
   }
   return (
     <div className="home">
-      <SideBar toggel={toggel} />
+      <SideBar />
       <div className="overlay">
         <span className="im">Hluf Abebe</span>
         <Typewriter
@@ -30,7 +33,7 @@ function Home() {
         </motion.button>
       </div>
       <div className="hamburger-container">
-        {toggel ? (
+        {toggle ? (
           <AiOutlineClose className="icon" onClick={onClickHandler} />
         ) : (
           <AiOutlineMenu className="icon" onClick={onClickHandler} />

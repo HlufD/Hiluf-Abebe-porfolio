@@ -1,7 +1,6 @@
 import { MdPlayCircleOutline, MdCode } from "react-icons/md";
 
 const PortfolioCard = ({ title, link, text, technologies, img }) => {
-  console.log(img);
   return (
     <div className="project-container right">
       <p className="pro-title">{title}</p>

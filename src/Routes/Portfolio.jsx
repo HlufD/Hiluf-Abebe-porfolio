@@ -7,10 +7,10 @@ function Portfolio() {
       <h3 className="about-title">Portfolio</h3>
       <PortfolioCard
         title="Hluf Abebe"
-        link="https://www.google.com"
+        link="https://abbaylaw.com"
         text="This project is a law firm website that provides iformation and
           service given by Lawyer Abbayneh Badeg and has a Blog functionalies."
-        technologies={["React", "php", "Bootstrap"]}
+        technologies={["React", "Material Ui", "NodeJs", "Mysql"]}
         img="./img/abbaylaw.png"
       />
     </div>

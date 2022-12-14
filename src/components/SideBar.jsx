@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   FaFacebook,
   FaTelegram,
@@ -11,14 +12,17 @@ import {
   AiFillFileText,
   AiTwotoneHome,
 } from "react-icons/ai";
+import { myContext } from "../context/myContext";
 import { MdOutlineLocalPostOffice, MdComputer, MdHome } from "react-icons/md";
 import classNames from "classnames";
 import NavLink from "./NavLink";
 import SocilaMideaLink from "./SocilaMideaLink";
 
-function SideBar({ toggel }) {
+function SideBar() {
+  const context = useContext(myContext);
+  const { toggle } = context;
   return (
-    <div className={classNames("side-bar", { showSidebar: toggel === true })}>
+    <div className={classNames("side-bar", { showSidebar: toggle === true })}>
       <div className="sidebar-info">
         <div className="sidebar-img-container">
           <img

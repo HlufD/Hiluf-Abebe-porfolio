@@ -74,4 +74,17 @@
     width: 80%;
     margin-left: 20%;
   }
+  .more-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .skill-wraper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .skill-wraper > div {
+    width: 50%;
+  }
 }

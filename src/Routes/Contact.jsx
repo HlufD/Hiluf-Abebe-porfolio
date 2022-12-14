@@ -5,13 +5,8 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <h3 className="about-title">Contact</h3>
-      <p className="intro">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
-        doloremque illum provident ab odit quia atque debitis maiores quibusdam
-        suscipit.
-      </p>
       <section className="card-container">
-        <div className="right">
+        <div className="right info-con">
           <div className="one-row">
             <span className="icon-container">
               <MdLocationOn />
@@ -51,7 +46,7 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
-        <form className="right">
+        <form className="right form-wrapper">
           <div className="wrapper-all">
             <Input label="Full Name" linkto="name" type="text" />
             <Input label="Email" linkto="email" type="email" />

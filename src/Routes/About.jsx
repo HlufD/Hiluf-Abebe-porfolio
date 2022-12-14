@@ -6,16 +6,18 @@ function About() {
   return (
     <div className="About" id="About">
       <div className="more-about">
-        <h3 className="about-title">About</h3>
-        <p className="about-text">
-          Enthusiastic Electrical and Computer Engineering graduate from
-          University of Gondar, with clear understanding of object oriented
-          programing, web development and embedded systems. Motivated to learn,
-          grow and excel in Electrical, Computer Engineering and other related
-          fields.
-        </p>
-        <div className="about-img-con">
-          <img src="./img/programming.svg" alt="img here" />
+        <div className="right-side">
+          <h3 className="about-title">About</h3>
+          <p className="about-text">
+            Enthusiastic Electrical and Computer Engineering graduate from
+            University of Gondar, with clear understanding of object oriented
+            programing, web development and embedded systems. Motivated to
+            learn, grow and excel in Electrical, Computer Engineering and other
+            related fields.
+          </p>
+          <div className="about-img-con">
+            <img src="./img/programming.svg" alt="img here" />
+          </div>
         </div>
         <div className="about-details">
           <h3 className="About-intro"> Fullstack Developer</h3>
@@ -43,16 +45,22 @@ function About() {
           have worked on them for the last couple of years.if you want to hire
           me you can see the potfolio page.
         </p>
-        <ProgressBar lebele={"html"} percent={"100%"} />
-        <ProgressBar lebele={"css"} percent={"90%"} />
-        <ProgressBar lebele={"javaScript"} percent={"80%"} />
-        <ProgressBar lebele={"typeScript"} percent={"80%"} />
-        <ProgressBar lebele={"ReactJs"} percent={"80%"} />
-        <ProgressBar lebele={"NodeJs"} percent={"80%"} />
-        <ProgressBar lebele={"MonoDb"} percent={"80%"} />
-        <ProgressBar lebele={"Mysql"} percent={"70%"} />
-        <ProgressBar lebele={"Git"} percent={"70%"} />
-        <ProgressBar lebele={"php"} percent={"50%"} />
+        <div className="skill-wraper">
+          <div>
+            <ProgressBar lebele={"html"} percent={"100%"} />
+            <ProgressBar lebele={"css"} percent={"90%"} />
+            <ProgressBar lebele={"javaScript"} percent={"80%"} />
+            <ProgressBar lebele={"typeScript"} percent={"80%"} />
+            <ProgressBar lebele={"ReactJs"} percent={"80%"} />
+          </div>
+          <div>
+            <ProgressBar lebele={"NodeJs"} percent={"80%"} />
+            <ProgressBar lebele={"MonoDb"} percent={"80%"} />
+            <ProgressBar lebele={"Mysql"} percent={"70%"} />
+            <ProgressBar lebele={"Git"} percent={"70%"} />
+            <ProgressBar lebele={"php"} percent={"50%"} />
+          </div>
+        </div>
       </div>
     </div>
   );

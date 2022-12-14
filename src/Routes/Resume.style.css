@@ -71,5 +71,6 @@
   .resume {
     width: 80%;
     margin-left: 20%;
+    border: 1px solid red;
   }
 }

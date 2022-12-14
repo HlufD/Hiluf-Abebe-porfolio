@@ -69,4 +69,31 @@
     width: 80%;
     margin-left: 20%;
   }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-container > div {
+    width: 48%;
+  }
+  .form-wrapper {
+    width: 48%;
+  }
+  .wrapper-all {
+    width: 100%;
+    height: 500px;
+  }
+  .btn {
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 0.6rem 1.3rem;
+  }
+  .info-con {
+    height: 544px;
+  }
+  .card-container {
+    margin-top: 0rem;
+  }
 }

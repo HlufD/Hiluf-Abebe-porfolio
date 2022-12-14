@@ -3,17 +3,11 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import SideBar from "../components/SideBar";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { myContext } from "../contexts/myContext";
-
 function Home() {
   const [toggel, setToggel] = useState(false);
-
-  console.log(context);
-
   function onClickHandler() {
     setToggel(!toggel);
   }
-
   return (
     <div className="home">
       <SideBar toggel={toggel} />

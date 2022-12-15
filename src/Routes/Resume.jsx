@@ -1,18 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
     <div className="resume" id="resume">
-      <h3 className="about-resume">Resume</h3>
-      <p className="resume-intro">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga ad sed
-        fugiat aperiam minima reiciendis dolor eligendi? Architecto delectus
-        voluptas enim excepturi odio inventore beatae esse neque voluptates
-        ipsum!
-      </p>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <h3 className="about-resume">Resume</h3>
+        <p className="resume-intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga ad
+          sed fugiat aperiam minima reiciendis dolor eligendi? Architecto
+          delectus voluptas enim excepturi odio inventore beatae esse neque
+          voluptates ipsum!
+        </p>
+      </motion.div>
       <section>
         {/* start of sumary */}
-        <div className="sumary">
+        <motion.div
+          className="sumar"
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h3 className="section-title">Sumary</h3>
           <div className="resume-title-wrapper">
             <span className="circle"></span>
@@ -33,11 +47,17 @@ const Resume = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* end of sumary */}
 
         {/* start od education */}
-        <div className="sumary">
+        <motion.div
+          className="sumary"
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h3 className="section-title">Education</h3>
           <div className="resume-title-wrapper">
             <span className="circle"></span>
@@ -75,10 +95,16 @@ const Resume = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* end of educaton */}
         {/* start of expriance */}
-        <div className="sumary">
+        <motion.div
+          className="sumary"
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h3 className="section-title">Expriance</h3>
           <div className="resume-title-wrapper">
             <span className="circle"></span>
@@ -110,7 +136,7 @@ const Resume = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* end of expriance */}
       </section>
     </div>

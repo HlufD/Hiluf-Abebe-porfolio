@@ -14,14 +14,6 @@ function Portfolio() {
           technologies={["React", "Material Ui", "NodeJs", "Mysql"]}
           img="./img/abbaylaw.png"
         />
-        <PortfolioCard
-          title="Hluf Abebe"
-          link="https://abbaylaw.com"
-          text="This project is a law firm website that provides iformation and
-          service given by Lawyer Abbayneh Badeg and has a Blog functionalies."
-          technologies={["React", "Material Ui", "NodeJs", "Mysql"]}
-          img="./img/abbaylaw.png"
-        />
       </div>
     </div>
   );

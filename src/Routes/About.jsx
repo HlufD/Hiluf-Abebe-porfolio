@@ -1,12 +1,19 @@
 import { FaAngleRight } from "react-icons/fa";
 import List from "../components/List";
 import ProgressBar from "../components/ProgressBar";
+import { motion } from "framer-motion";
 
 function About() {
   return (
     <div className="About" id="About">
       <div className="more-about">
-        <div className="right-side">
+        <motion.div
+          className="right-side"
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ duration: 1.3, type: "spring", bounce: 0.3 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h3 className="about-title">About</h3>
           <p className="about-text">
             Enthusiastic Electrical and Computer Engineering graduate from
@@ -18,8 +25,14 @@ function About() {
           <div className="about-img-con">
             <img src="./img/programming.svg" alt="img here" />
           </div>
-        </div>
-        <div className="about-details">
+        </motion.div>
+        <motion.div
+          className="about-details"
+          initial={{ x: 100, opacity: 0 }}
+          transition={{ duration: 1.4, type: "spring", bounce: 0.3 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h3 className="About-intro"> Fullstack Developer</h3>
           <p className="About-me">
             I am a Fullstack web developer with hands on experience with
@@ -36,7 +49,7 @@ function About() {
             <List text={"email"} value={"hlufabebe2015@gmail.com"} />
             <List text={"Freelance"} value={"Available"} />
           </ul>
-        </div>
+        </motion.div>
       </div>
       <div className="skills">
         <h3 className="about-title">Skills</h3>

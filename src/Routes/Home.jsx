@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import SideBar from "../components/SideBar";

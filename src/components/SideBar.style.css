@@ -6,7 +6,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 100;
   background-color: #040b14;
-  /* padding: 40px 0 40 0; */
 }
 .showSidebar {
   width: 60%;
@@ -103,5 +102,20 @@
   .side-bar {
     width: 20%;
     transform: translateX(0);
+  }
+  .social-icon-containare {
+    transition: all ease-in 0.2s;
+    margin-top: 1.4rem;
+  }
+  .social-icon-containare:hover {
+    background-color: rgb(31, 143, 217);
+  }
+  .nav-container a {
+    font-size: medium;
+  }
+
+  .nav-icon {
+    color: rgb(106, 102, 102);
+    font-size: 1.4rem;
   }
 }

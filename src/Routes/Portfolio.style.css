@@ -65,8 +65,9 @@
   }
   .project-container {
     width: 40%;
+    align-self: flex-start;
   }
   .portfolio-wrapper {
-    display: flex;
+    width: 70%;
   }
 }

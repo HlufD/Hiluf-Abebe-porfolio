@@ -1,12 +1,19 @@
 import { MdLocationOn, MdEmail, MdSettingsCell } from "react-icons/md";
 import Input from "../components/Input";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <div className="contact" id="contact">
       <h3 className="about-title">Contact</h3>
       <section className="card-container">
-        <div className="right info-con">
+        <motion.div
+          className="right info-con"
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="one-row">
             <span className="icon-container">
               <MdLocationOn />
@@ -45,8 +52,14 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </div>
-        <form className="right form-wrapper">
+        </motion.div>
+        <motion.form
+          className="right form-wrapper"
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <div className="wrapper-all">
             <Input label="Full Name" linkto="name" type="text" />
             <Input label="Email" linkto="email" type="email" />
@@ -59,7 +72,7 @@ const Contact = () => {
             </div>
             <button className="btn">Send Message</button>
           </div>
-        </form>
+        </motion.form>
       </section>
     </div>
   );

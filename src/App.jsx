@@ -10,8 +10,22 @@ import { myContext } from "./context/myContext";
 
 function App() {
   const [toggle, setToggle] = useState(false);
+  const [email, setEmail] = useState({
+    from_name: "",
+    from_email: "",
+    subject: "",
+    message: "",
+  });
+  console.log(email);
+  function onChangeHandler(e) {
+    const name = e.target.name;
+    const value = e.target.value;
+    setEmail({ ...email, [name]: value });
+  }
   return (
-    <myContext.Provider value={{ toggle, setToggle }}>
+    <myContext.Provider
+      value={{ toggle, setToggle, setEmail, email, onChangeHandler }}
+    >
       <div className="App">
         <Home />
         <About />

@@ -1,8 +1,44 @@
 import { MdLocationOn, MdEmail, MdSettingsCell } from "react-icons/md";
 import Input from "../components/Input";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import { useRef, useState, useContext } from "react";
+import classNames from "classnames";
+import { myContext } from "../context/myContext";
 
 const Contact = () => {
+  const form = useRef();
+  const [sent, setSent] = useState(false);
+  const { setEmail, email, onChangeHandler } = useContext(myContext);
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_g3wwi3t",
+        "template_1cob6yi",
+        form.current,
+        "6847iHCddkSjz_Y1v"
+      )
+      .then(
+        (result) => {
+          setEmail({
+            ...email,
+            from_name: "",
+            from_email: "",
+            subject: "",
+            message: "",
+          });
+          setSent(true);
+          setTimeout(() => {
+            setSent(false);
+          }, 3000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <div className="contact" id="contact">
       <h3 className="about-title">Contact</h3>
@@ -53,22 +89,54 @@ const Contact = () => {
             ></iframe>
           </div>
         </motion.div>
+
         <motion.form
+          ref={form}
           className="right form-wrapper"
           initial={{ y: 100, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.5 }}
+          onSubmit={sendEmail}
         >
+          <div
+            className={classNames("snackbar", {
+              "show-snackbar": sent === true,
+            })}
+          >
+            <p>Message sent</p>
+          </div>
           <div className="wrapper-all">
-            <Input label="Full Name" linkto="name" type="text" />
-            <Input label="Email" linkto="email" type="email" />
-            <Input label="Subject" linkto="subject" type="text" />
+            <Input
+              label="Full Name"
+              linkto="name"
+              type="text"
+              name="from_name"
+            />
+            <Input
+              label="Email"
+              linkto="email"
+              type="email"
+              name="from_email"
+            />
+            <Input
+              label="Subject"
+              linkto="subject"
+              type="text"
+              name="subject"
+            />
             <div className="input-wrapper">
               <label htmlFor="#message" style={{ marginBottom: ".4rem" }}>
                 Message
               </label>
-              <textarea name="" id="#message" cols="30" rows="10"></textarea>
+              <textarea
+                onChange={onChangeHandler}
+                name="message"
+                id="#message"
+                cols="30"
+                rows="10"
+                value={email["message"]}
+              ></textarea>
             </div>
             <button className="btn">Send Message</button>
           </div>

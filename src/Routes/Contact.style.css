@@ -63,6 +63,22 @@
   color: white;
   border-radius: 5px;
 }
+.snackbar {
+  /* background-color: #14a44d; */
+  color: #14a44d;
+  padding: 0.4rem;
+  width: 53%;
+  margin-top: 0.4rem;
+  text-align: center;
+  margin-left: 4rem;
+  transform: translateX(300px);
+  transition: all ease-in 0.2s;
+  opacity: 0;
+}
+.show-snackbar {
+  transform: translateX(0);
+  opacity: 1;
+}
 
 @media (min-width: 720px) {
   .contact {

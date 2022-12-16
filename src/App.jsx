@@ -20,7 +20,7 @@ function App() {
         <Contact />
         <div className="footer">
           <p className="copy">
-            <MdOutlineCopyright /> Cpoyright {new Date().getFullYear()}
+            <MdOutlineCopyright /> Copyright {new Date().getFullYear()}
           </p>
           <p>Developed by Hluf Abebe</p>
         </div>

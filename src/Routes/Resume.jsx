@@ -11,23 +11,18 @@ const Resume = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         <h3 className="about-resume">Resume</h3>
-        <p className="resume-intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga ad
-          sed fugiat aperiam minima reiciendis dolor eligendi? Architecto
-          delectus voluptas enim excepturi odio inventore beatae esse neque
-          voluptates ipsum!
-        </p>
+        <p className="resume-intro"></p>
       </motion.div>
       <section>
         {/* start of sumary */}
         <motion.div
-          className="sumar"
+          className="sumary"
           initial={{ y: 100, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <h3 className="section-title">Sumary</h3>
+          <h3 className="section-title">Summary</h3>
           <div className="resume-title-wrapper">
             <span className="circle"></span>
             <p>Hluf Abebe</p>
@@ -35,10 +30,11 @@ const Resume = () => {
           <div className="wraper-sumary">
             <div className="sumary-about-me">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquid illo numquam iure vel, magni quisquam odit fuga
-                voluptatibus nemo laboriosam adipisci! Tempora omnis tenetur
-                quia ea eveniet illum officiis nesciunt.
+                I am a self taught fullstack web developer with strong
+                foundations how the web works and i am Proficient with HTML,
+                CSS, javaScript. My Tech stack is
+                MERN(MongoDb,Express,React,Node) and can work with different
+                programing paradigms.
               </p>
               <ul>
                 <li>Addis Ababa Ethiopia</li>
@@ -62,7 +58,7 @@ const Resume = () => {
           <div className="resume-title-wrapper">
             <span className="circle"></span>
             <p>
-              Computer Engineerings
+              Computer Engineering
               <span style={{ textTransform: "capitalize" }}>(Bsc)</span>
             </p>
           </div>
@@ -71,10 +67,14 @@ const Resume = () => {
               <p className="from">2017-2022</p>
               <p style={{ fontWeight: 700 }}>University of Gondar</p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquid illo numquam iure vel, magni quisquam odit fuga
-                voluptatibus nemo laboriosam adipisci! Tempora omnis tenetur
-                quia ea eveniet illum officiis nesciunt.
+                I have a Bsc in Electrical and Computer Engineering (Computer
+                Engineering) . Took major courses i took are
+                <ul>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Java(object oriented programing)</li>
+                  <li>Database(mysql)</li>
+                  <li>c++ programing</li>
+                </ul>
               </p>
             </div>
           </div>
@@ -88,11 +88,17 @@ const Resume = () => {
               <p className="from">2021-2022</p>
               <p style={{ fontWeight: 700 }}>Udemy</p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquid illo numquam iure vel, magni quisquam odit fuga
-                voluptatibus nemo laboriosam adipisci! Tempora omnis tenetur
-                quia ea eveniet illum officiis nesciunt.
+                i Learned javaScript the advanced concepts from udemy and i have
+                a certificate in javasCript.
               </p>
+              <h4>Topic i learned were</h4>
+              <ul>
+                <li>The v8 engine</li>
+                <li>Colures</li>
+                <li>prototypal inheritance</li>
+                <li>asynchronous programing</li>
+                <li>Classical Inheritance</li>
+              </ul>
             </div>
           </div>
         </motion.div>
@@ -105,7 +111,7 @@ const Resume = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <h3 className="section-title">Expriance</h3>
+          <h3 className="section-title">Experience</h3>
           <div className="resume-title-wrapper">
             <span className="circle"></span>
             <p>Fullstack Web Developer</p>
@@ -114,12 +120,12 @@ const Resume = () => {
             <div className="sumary-about-me">
               <p className="from">2022 - Present</p>
               <p style={{ fontWeight: 700 }}>
-                St.Michael Business and It Intsitute(Addis Ababa Ethiopia)
+                St.Michael Business and It Institute(Addis Ababa, Ethiopia)
               </p>
               <ul>
                 <li>
                   Lead in the design, development, and implementation of the
-                  graphic, layout, and production communication materials
+                  graphic, layout, and production communication materials.
                 </li>
                 <li>
                   Delegate tasks to the 7 members of the design team and provide
@@ -128,10 +134,6 @@ const Resume = () => {
                 <li>
                   Supervise the assessment of all graphic materials in order to
                   ensure quality and accuracy of the de
-                </li>
-                <li>
-                  Oversee the efficient use of production project budgets
-                  ranging from $2,000 - $25,000
                 </li>
               </ul>
             </div>

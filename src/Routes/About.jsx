@@ -36,8 +36,8 @@ function About() {
           <h3 className="About-intro"> Fullstack Developer</h3>
           <p className="About-me">
             I am a Fullstack web developer with hands on experience with
-            developing static and dynaminy websites and web apps with the
-            current web techonlogies.
+            developing static and dynamic websites and web apps with the current
+            web technologies.
           </p>
           <ul>
             <List text={"Birthday"} value={"13-13-2043"} />
@@ -56,7 +56,7 @@ function About() {
         <p className="About-me">
           I have different level of skill on the following technologies and i
           have worked on them for the last couple of years.if you want to hire
-          me you can see the potfolio page.
+          me contact me through +251-937941318
         </p>
         <div className="skill-wraper">
           <div>

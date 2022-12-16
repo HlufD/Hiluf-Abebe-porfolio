@@ -16,7 +16,6 @@ function App() {
     subject: "",
     message: "",
   });
-  console.log(email);
   function onChangeHandler(e) {
     const name = e.target.name;
     const value = e.target.value;

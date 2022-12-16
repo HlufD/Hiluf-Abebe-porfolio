@@ -23,14 +23,16 @@ function Home() {
             loop: true,
           }}
         />
-        <motion.button
-          initial={{ y: 40, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-          className="download"
-        >
-          Download Cv
-        </motion.button>
+        <a href="./Doc/HilufAbebecv2.pdf" download="./Doc/HilufAbebecv2.pdf">
+          <motion.button
+            initial={{ y: 40, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="download"
+          >
+            Download Cv
+          </motion.button>
+        </a>
       </div>
       <div className="hamburger-container">
         {toggle ? (

@@ -26,7 +26,7 @@ function SideBar() {
       <div className="sidebar-info">
         <div className="sidebar-img-container">
           <img
-            src="img/back.jpg"
+            src="img/hLUF.JPG"
             alt="this was an image"
             className="sidebar-img"
           />

@@ -4,7 +4,6 @@ const PortfolioCard = ({ title, link, text, technologies, img }) => {
   return (
     <motion.div
       className="project-container"
-      whileHover={{ scale: 1.1 }}
       initial={{ y: 100, opacity: 0 }}
       transition={{ duration: 2, type: "spring", bounce: 0.3 }}
       whileInView={{ y: 0, opacity: 1 }}

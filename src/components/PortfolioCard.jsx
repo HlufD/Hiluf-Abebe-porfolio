@@ -1,29 +1,43 @@
-import { MdPlayCircleOutline, MdCode } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const PortfolioCard = ({ title, link, text, technologies, img }) => {
   return (
-    <div className="project-container">
+    <motion.div
+      className="project-container"
+      whileHover={{ scale: 1.1 }}
+      initial={{ y: 100, opacity: 0 }}
+      transition={{ duration: 2, type: "spring", bounce: 0.3 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
+    >
       <p className="pro-title">{title}</p>
       <div className="img-con">
-        <img src={img} alt="alt" />
-      </div>
-      <div className="icon-con">
-        <a className="icon-con" href={link} target="_blanck">
-          <MdPlayCircleOutline />
-        </a>
-        <a className="icon-con">
-          <MdCode />
+        <a href={link} target="_blank">
+          <img src={img} alt="alt" />
         </a>
       </div>
-      <div className="side-in from-right">
+      <motion.div
+        className="side-in from-right"
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <p>{text}</p>
-      </div>
-      <div className="side-in from-left">
+      </motion.div>
+      <motion.div
+        className="side-in from-left"
+        initial={{ y: 70, opacity: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <span style={{ fontWeight: "bold" }}>Built In:</span>
         {technologies.map((tech, index) => {
           return <p key={index}>{tech}</p>;
         })}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

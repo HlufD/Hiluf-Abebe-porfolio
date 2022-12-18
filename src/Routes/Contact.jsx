@@ -55,7 +55,6 @@ const Contact = () => {
               <MdLocationOn />
             </span>
             <div className="txt-info">
-              <h3>Location</h3>
               <p>Addis Ababa,Ethiopia</p>
             </div>
           </div>
@@ -64,7 +63,6 @@ const Contact = () => {
               <MdEmail />
             </span>
             <div className="txt-info">
-              <h3>Email</h3>
               <p>hlufabebe2015@gmail.com</p>
             </div>
           </div>
@@ -73,7 +71,6 @@ const Contact = () => {
               <MdSettingsCell />
             </span>
             <div className="txt-info">
-              <h3>Phone No</h3>
               <p>+251-937941318</p>
             </div>
           </div>
@@ -125,14 +122,11 @@ const Contact = () => {
               type="text"
               name="subject"
             />
-            <div className="input-wrapper">
-              <label htmlFor="#message" style={{ marginBottom: ".4rem" }}>
-                Message
-              </label>
+            <div className="message-wrapper">
               <textarea
                 onChange={onChangeHandler}
                 name="message"
-                id="#message"
+                id="message"
                 cols="30"
                 rows="10"
                 value={email["message"]}

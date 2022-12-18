@@ -21,6 +21,7 @@
 .one-row {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 .icon-container {
   width: 35px;
@@ -43,15 +44,22 @@
   margin-top: 1rem;
   padding: 20px 0;
 }
+.message-wrapper {
+  margin-top: 2rem;
+}
 
 #message {
-  width: 60%;
+  width: 100%;
+  outline: none;
+  border: 1px solid gray;
 }
 
 .wrapper-all {
   margin: 0 auto;
+  width: 100%;
 }
-
+.form-wrapper {
+}
 .btn {
   padding: 0.4rem 1.3rem;
   font-size: 1rem;

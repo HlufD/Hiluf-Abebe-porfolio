@@ -39,6 +39,7 @@ const Contact = () => {
         }
       );
   }
+  console.log(form);
   return (
     <div className="contact" id="contact">
       <h3 className="about-title">Contact</h3>
@@ -48,7 +49,7 @@ const Contact = () => {
           initial={{ y: 100, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }}
         >
           <div className="one-row">
             <span className="icon-container">
@@ -93,7 +94,7 @@ const Contact = () => {
           initial={{ y: 100, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }}
           onSubmit={sendEmail}
         >
           <div
@@ -128,7 +129,7 @@ const Contact = () => {
                 name="message"
                 id="message"
                 cols="30"
-                rows="10"
+                rows="8"
                 value={email["message"]}
               ></textarea>
             </div>

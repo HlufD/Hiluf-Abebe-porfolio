@@ -68,7 +68,7 @@ const Resume = () => {
               <p style={{ fontWeight: 700 }}>University of Gondar</p>
               <p>
                 I have a Bsc in Electrical and Computer Engineering (Computer
-                Engineering) . Took major courses i took are
+                Engineering) . major courses i took :
                 <ul>
                   <li>Data Structures and Algorithms</li>
                   <li>Java(object oriented programing)</li>
@@ -81,17 +81,17 @@ const Resume = () => {
 
           <div className="resume-title-wrapper">
             <span className="circle"></span>
-            <p>JavaScript Developer</p>
+            <p>JavaScript Development</p>
           </div>
           <div className="wraper-sumary">
             <div className="sumary-about-me">
-              <p className="from">2021-2022</p>
+              <p className="from">2019-2022</p>
               <p style={{ fontWeight: 700 }}>Udemy</p>
               <p>
                 i Learned javaScript the advanced concepts from udemy and i have
                 a certificate in javasCript.
               </p>
-              <h4>Topic i learned were</h4>
+              <h4>Topicsi covered</h4>
               <ul>
                 <li>The v8 engine</li>
                 <li>Colures</li>
@@ -120,7 +120,7 @@ const Resume = () => {
             <div className="sumary-about-me">
               <p className="from">2022 - Present</p>
               <p style={{ fontWeight: 700 }}>
-                St.Michael Business and It Institute(Addis Ababa, Ethiopia)
+                St.Michael Business and IT Institute(Addis Ababa, Ethiopia)
               </p>
               <ul>
                 <li>
@@ -133,8 +133,17 @@ const Resume = () => {
                 </li>
                 <li>
                   Supervise the assessment of all graphic materials in order to
-                  ensure quality and accuracy of the de
+                  ensure quality and accuracy of the development.
                 </li>
+              </ul>
+            </div>
+            <div className="sumary-about-me">
+              <p className="from">2019 - Present</p>
+              <p style={{ fontWeight: 700 }}>Flreelancing</p>
+              <ul>
+                <li>Frontend development using React</li>
+                <li>Backend Development uning Node and Express</li>
+                <li>Designning and dveloping Databases</li>
               </ul>
             </div>
           </div>

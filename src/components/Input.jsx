@@ -8,11 +8,12 @@ const Input = ({ label, linkto, type, name }) => {
       <input
         className="input"
         type={type}
-        id={`#${linkto}`}
+        id={`${linkto}`}
         name={name}
         onChange={onChangeHandler}
         value={email[name]}
         placeholder=" "
+        autoComplete="off"
       />
       <span className="label" htmlFor={`${linkto}`}>
         {label}

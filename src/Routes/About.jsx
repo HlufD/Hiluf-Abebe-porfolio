@@ -2,6 +2,15 @@ import { FaAngleRight } from "react-icons/fa";
 import List from "../components/List";
 import ProgressBar from "../components/ProgressBar";
 import { motion } from "framer-motion";
+import {
+  MdOutlineCastForEducation,
+  MdPhone,
+  MdLocationCity,
+  MdMail,
+  MdWorkOutline,
+  MdWeb,
+} from "react-icons/md";
+import { FaUniversity } from "react-icons/fa";
 
 function About() {
   return (
@@ -12,7 +21,7 @@ function About() {
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1.3, type: "spring", bounce: 0.3 }}
           whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }}
         >
           <h3 className="about-title">About</h3>
           <p className="about-text">
@@ -31,7 +40,7 @@ function About() {
           initial={{ x: 100, opacity: 0 }}
           transition={{ duration: 1.4, type: "spring", bounce: 0.3 }}
           whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }}
         >
           <h3 className="About-intro"> Fullstack Developer</h3>
           <p className="About-me">
@@ -40,14 +49,28 @@ function About() {
             web technologies.
           </p>
           <ul>
-            <List text={"Birthday"} value={"13-13-2043"} />
-            <List text={"website"} value={"www.hlufabebe.com"} />
-            <List text={"Phone"} value={"0937941318"} />
-            <List text={"City"} value={"Addis Ababa"} />
-            <List text={"Age"} value={"23"} />
-            <List text={"Degree"} value={"Bsc"} />
-            <List text={"email"} value={"hlufabebe2015@gmail.com"} />
-            <List text={"Freelance"} value={"Available"} />
+            <List
+              text={"Degree"}
+              value={"Computer Engineering(Bsc)"}
+              Icon={<FaUniversity />}
+            />
+            <List text={"Tech Stack"} value={"MERN stack"} Icon={<MdWeb />} />
+            <List text={"Phone"} value={"0937941318"} Icon={<MdPhone />} />
+            <List
+              text={"City"}
+              value={"Addis Ababa"}
+              Icon={<MdLocationCity />}
+            />
+            <List
+              text={"email"}
+              value={"hlufabebe2015@gmail.com"}
+              Icon={<MdMail />}
+            />
+            <List
+              text={"Freelance"}
+              value={"Available"}
+              Icon={<MdWorkOutline />}
+            />
           </ul>
         </motion.div>
       </div>

@@ -24,7 +24,7 @@
   margin-bottom: 0.6rem;
 }
 .wraper-sumary {
-  border-left: 2px solid rgb(50, 50, 102);
+  border-left: 2px solid rgb(31, 143, 217);
   margin-bottom: -5px;
 }
 .resume-title-wrapper {
@@ -44,7 +44,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 2px solid rgb(50, 50, 102);
+  border: 2px solid rgb(31, 143, 217);
   border-radius: 50%;
 }
 .sumary-about-me {
@@ -52,10 +52,12 @@
 }
 .sumary-about-me p {
   margin-bottom: 0.6rem;
+  font-weight: lighter;
 }
 .sumary-about-me ul {
   margin-left: 1.3rem;
   margin-top: 1rem;
+  font-weight: lighter;
 }
 .sumary-about-me ul li {
   line-height: 1.5rem;

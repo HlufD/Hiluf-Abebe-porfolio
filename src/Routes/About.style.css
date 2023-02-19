@@ -58,9 +58,15 @@
   font-weight: 400;
   margin-right: 0.5rem;
 }
+.list-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
 .about-icon {
   color: rgb(31, 143, 217);
   font-size: 1.5rem;
+  margin-right: 1rem;
 }
 .skills {
   margin-top: 1.5rem;

@@ -34,9 +34,15 @@ function SideBar() {
         <h3 className="sidebar-name">Hluf Abebe</h3>
         <div className="sidebar-social-midea-link">
           <SocilaMideaLink linkto={"#"} Icon={FaFacebook} />
-          <SocilaMideaLink linkto={"#"} Icon={FaLinkedin} />
+          <SocilaMideaLink
+            linkto={"https://www.linkedin.com/in/hluf-abebe-6a6b8b132/"}
+            Icon={FaLinkedin}
+          />
           <SocilaMideaLink linkto={"#"} Icon={FaTelegram} />
-          <SocilaMideaLink linkto={"#"} Icon={FaGithub} />
+          <SocilaMideaLink
+            linkto={"https://github.com/HlufD?tab=repositories"}
+            Icon={FaGithub}
+          />
           <SocilaMideaLink linkto={"#"} Icon={FaInstagram} />
         </div>
       </div>

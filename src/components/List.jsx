@@ -1,10 +1,10 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa";
 function List(props) {
-  const { text, value } = props;
+  const { text, value, Icon } = props;
   return (
-    <li>
-      <FaAngleRight className="about-icon" />
+    <li className="list-wrapper">
+      <i className="about-icon"> {Icon}</i>
       <span>{text}:</span>
       {value}
     </li>

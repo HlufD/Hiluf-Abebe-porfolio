@@ -1,16 +1,17 @@
 .input-wrapper {
   position: relative;
   margin-top: 2rem;
-  background: none;
+  background: transparent;
 }
 .input-wrapper input {
   width: 100%;
   padding: 0.6rem;
   border: 1px solid gray;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: white;
   outline: none;
   transition: all ease 0.3s;
+  font-size: 0.9rem;
 }
 
 .label {
@@ -20,8 +21,9 @@
   color: gray;
   font-size: 0.9rem;
   cursor: text;
-  transition: all ease 0.4s;
+  transition: all ease 0.3s;
   background-color: white;
+  width: fit-content;
 }
 .input:focus {
   border-color: rgb(31, 143, 217);
@@ -29,10 +31,11 @@
 .input:focus ~ .label,
 .input:not(:placeholder-shown).input:not(:focus) ~ .label {
   top: -0.6rem;
+  color: rgb(31, 143, 217);
 }
 
 @media (min-width: 720px) {
   .input-wrapper input {
-    height: 35px;
+    height: 40px;
   }
 }

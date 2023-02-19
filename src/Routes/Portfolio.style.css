@@ -36,8 +36,12 @@
   justify-content: space-around;
   padding: 0.3rem;
 }
+.from-left P {
+  font-weight: lighter;
+}
 .from-right p {
   line-height: 1.5rem;
+  font-weight: lighter;
 }
 @media (min-width: 720px) {
   .portfolio {

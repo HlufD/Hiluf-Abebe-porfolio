@@ -13,6 +13,13 @@ function Portfolio() {
           technologies={["React", "Mysql", "Express", "CSS"]}
           img="./img/abbaylaw.png"
         />
+        <PortfolioCard
+          title="St.Michael "
+          link="https://saintmichael.edu.et/"
+          text="This website was build for St.Michael Business and IT Insititute .It provides information and about service give by the the inistitute."
+          technologies={["React", "Ant Design", "CSS"]}
+          img="./img/stMichel.jpg"
+        />
       </motion.div>
     </div>
   );

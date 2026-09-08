@@ -15,6 +15,8 @@ import {
   FiLayers,
   FiSend,
   FiCheck,
+  FiSun,
+  FiMoon,
 } from "react-icons/fi";
 
 const map = {
@@ -34,6 +36,8 @@ const map = {
   work: FiLayers,
   send: FiSend,
   check: FiCheck,
+  sun: FiSun,
+  moon: FiMoon,
 };
 
 export default function Icon({ name, className }) {

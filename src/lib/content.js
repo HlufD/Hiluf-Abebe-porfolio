@@ -1,18 +1,19 @@
 export const profile = {
   name: "Hluf Abebe",
-  role: "Full-Stack Developer",
-  roles: ["Full-stack Developer", "Frontend Engineer", "Backend Engineer"],
+  role: "Backend Developer",
+  roles: ["Backend developer", "Distributed systems", "Fintech engineering"],
   location: "Addis Ababa, Ethiopia",
   email: "hlufabebe2015@gmail.com",
   phone: "+251 937 941 318",
   phoneHref: "+251937941318",
   cv: "/Doc/HilufAbebecv2.pdf",
-  photo: "/img/hLUF.JPG",
   available: true,
   summary:
-    "Electrical & Computer Engineering graduate from the University of Gondar. I build fast, reliable web applications end to end — from clean React interfaces to Node.js services and well-modeled databases.",
-  about:
-    "I'm a full-stack web developer with hands-on experience building static and dynamic websites and web apps with the current web stack. I care about clean architecture, accessible interfaces, and shipping things that hold up in production.",
+    "Backend developer with 4+ years building and scaling systems for fintech. I work mostly in Node.js, NestJS and TypeScript — with Go and Spring Boot in the mix — designing microservices, distributed systems and real-time services over gRPC and WebSockets. I care a lot about database performance: I once took a banking search platform from 6 seconds to under 50ms.",
+  about: [
+    "I build the parts of a product that have to stay up: payment flows, fund-transfer middleware, search that has to be fast, admin tooling that non-technical teams depend on. Most of my work is in fintech, where correctness and latency both matter.",
+    "Right now I lead backend work on the Dashen Super App at EagleLion. Before that I built services for Safaricom Ethiopia's One Platform and a range of platforms at Ablaze Labs. I'm comfortable owning a service end to end — schema, API, tests, containerisation, and the CI/CD pipeline that ships it.",
+  ],
 };
 
 export const socials = [
@@ -26,74 +27,84 @@ export const socials = [
 ];
 
 export const facts = [
-  { label: "Degree", value: "BSc, Computer Engineering" },
-  { label: "Stack", value: "MERN · TypeScript" },
+  { label: "Experience", value: "4+ years" },
+  { label: "Focus", value: "Fintech · Payments" },
+  { label: "Stack", value: "Node · NestJS · Go" },
   { label: "Location", value: "Addis Ababa, ET" },
-  { label: "Freelance", value: "Available" },
 ];
 
 export const skillGroups = [
   {
-    title: "Frontend",
-    items: ["React", "TypeScript", "JavaScript (ES2023)", "HTML5", "CSS / Tailwind"],
+    title: "Languages",
+    items: ["TypeScript", "JavaScript", "Go", "Java"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "PHP"],
+    items: ["Node.js", "NestJS", "Express", "Spring Boot"],
   },
   {
-    title: "Data & tooling",
-    items: ["MongoDB", "MySQL", "Git & GitHub", "Vite"],
+    title: "Data & messaging",
+    items: ["PostgreSQL", "MongoDB", "Redis", "Kafka"],
+  },
+  {
+    title: "APIs & realtime",
+    items: ["REST", "gRPC", "WebSockets", "Microservices"],
+  },
+  {
+    title: "Infra & CI/CD",
+    items: ["Docker", "Kubernetes", "GitHub Actions", "AWS"],
+  },
+  {
+    title: "Testing & observability",
+    items: ["Jest", "Mocha", "Winston"],
   },
 ];
 
 export const experience = [
   {
-    role: "Full-Stack Web Developer",
-    org: "St. Michael Business & IT Institute",
-    place: "Addis Ababa, Ethiopia",
-    period: "2022 — Present",
+    role: "Backend Developer",
+    org: "EagleLion System Technology",
+    place: "Dashen Super App",
+    period: "Jun 2025 — Present",
     points: [
-      "Led the design and development of the institute's public website and internal communication materials.",
-      "Coordinated a small delivery team, delegating tasks and reviewing work across the project.",
-      "Owned quality assurance for shipped materials to keep output accurate and consistent.",
+      "Lead and mentor a team of developers on the Dashen Super App, guiding technical decisions and running code reviews to keep quality consistent across services.",
+      "Designed and built a shared middleware service used by every fund-transfer flow — fee calculation, balance checks and limit checks — in one optimised, reusable place.",
+      "Implemented merchant payment functionality for secure transaction processing between users and merchants.",
+      "Built an admin dashboard that lets non-technical teams manage app-wide configuration.",
+      "Cut customer and transaction search from ~6 seconds to under 50ms by redesigning MongoDB and PostgreSQL indexing and moving to key-based search.",
     ],
   },
   {
-    role: "Freelance Developer",
-    org: "Independent",
-    place: "Remote",
-    period: "2019 — Present",
+    role: "Backend Developer",
+    org: "Safaricom Ethiopia",
+    place: "One Platform · Digital Channels",
+    period: "Feb 2025 — Jun 2025",
     points: [
-      "Frontend development with React and modern tooling.",
-      "Backend services with Node.js and Express.",
-      "Database design and implementation for client applications.",
+      "Built backend services for “One Platform” with Spring Boot and PostgreSQL as part of a 20-person Digital Channels team.",
+      "Built hierarchical merchant distribution and registration across multi-level regional hierarchies (Region → District), enabling organised onboarding at scale.",
+      "Developed backend services for an event-organisation platform supporting event creation and management workflows.",
+    ],
+  },
+  {
+    role: "Backend Developer",
+    org: "Ablaze Labs and Engineering",
+    place: "Addis Ababa, Ethiopia",
+    period: "Jun 2024 — Feb 2025",
+    points: [
+      "Built the core backend for a medical study and exam platform — quiz creation and taking, study-material uploads, and material ratings.",
+      "Implemented student progress tracking, subscription management and authentication so universities could manage course materials for their students.",
+      "Developed loyalty and referral functionality for a virtual gaming platform: referral tracking, reward calculation and a points/bonus system.",
+      "Added structured application logging with Winston, improving observability and debugging across services.",
     ],
   },
 ];
 
 export const education = [
   {
-    title: "BSc, Electrical & Computer Engineering (Computer Engineering)",
-    org: "University of Gondar",
+    title: "BSc, Electrical & Computer Engineering",
+    org: "University of Gondar, Ethiopia",
     period: "2017 — 2022",
-    points: [
-      "Data Structures & Algorithms",
-      "Object-Oriented Programming (Java)",
-      "Databases (MySQL)",
-      "C++ Programming",
-    ],
-  },
-  {
-    title: "JavaScript Development",
-    org: "Udemy — Certificate",
-    period: "2019 — 2022",
-    points: [
-      "The V8 engine and the event loop",
-      "Closures and scope",
-      "Prototypal & classical inheritance",
-      "Asynchronous programming",
-    ],
+    points: [],
   },
 ];
 

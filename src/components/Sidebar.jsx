@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Icon from "./Icon";
+import ThemeToggle from "./ThemeToggle";
 import { profile, socials, sections } from "../lib/content";
 import useActiveSection from "../lib/useActiveSection";
 
 const ids = sections.map((s) => s.id);
+const monogram = profile.name
+  .split(" ")
+  .map((w) => w[0])
+  .join("")
+  .slice(0, 2)
+  .toUpperCase();
 
 function NavItems({ active, onNavigate }) {
   return (
@@ -59,13 +66,9 @@ function Socials() {
 function Identity() {
   return (
     <a href="#home" className="flex items-center gap-3">
-      <img
-        src={profile.photo}
-        alt={profile.name}
-        width="44"
-        height="44"
-        className="size-11 rounded-full object-cover ring-1 ring-line-strong"
-      />
+      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-line-strong bg-surface-2 font-mono text-sm font-semibold text-accent">
+        {monogram}
+      </span>
       <span>
         <span className="block text-sm font-semibold text-ink">{profile.name}</span>
         <span className="block font-mono text-xs text-ink-faint">{profile.role}</span>
@@ -103,30 +106,32 @@ export default function Sidebar() {
               Available for work
             </span>
           )}
-          <Socials />
+          <div className="flex items-center gap-2">
+            <Socials />
+            <ThemeToggle />
+          </div>
         </div>
       </aside>
 
       {/* Mobile top bar */}
       <header className="fixed inset-x-0 top-0 z-40 flex items-center justify-between border-b border-line bg-surface/70 px-4 py-3 backdrop-blur-xl lg:hidden">
         <a href="#home" className="flex items-center gap-2.5">
-          <img
-            src={profile.photo}
-            alt={profile.name}
-            width="32"
-            height="32"
-            className="size-8 rounded-full object-cover ring-1 ring-line-strong"
-          />
+          <span className="flex size-8 items-center justify-center rounded-lg border border-line-strong bg-surface-2 font-mono text-xs font-semibold text-accent">
+            {monogram}
+          </span>
           <span className="text-sm font-semibold">{profile.name}</span>
         </a>
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          aria-label="Open menu"
-          className="flex size-9 items-center justify-center rounded-lg border border-line text-ink-muted"
-        >
-          <Icon name="menu" className="size-4" />
-        </button>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            aria-label="Open menu"
+            className="flex size-9 items-center justify-center rounded-lg border border-line text-ink-muted"
+          >
+            <Icon name="menu" className="size-4" />
+          </button>
+        </div>
       </header>
 
       <AnimatePresence>

@@ -7,7 +7,7 @@ function Timeline({ entries }) {
   return (
     <div className="relative flex flex-col gap-10 border-l border-line pl-6">
       {entries.map((e) => (
-        <Reveal key={e.title ?? e.role} className="relative">
+        <Reveal key={`${e.org}-${e.period}`} className="relative">
           <span className="absolute -left-[1.6875rem] top-1.5 size-2.5 rounded-full border-2 border-bg bg-accent" />
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h4 className="text-base font-semibold text-ink">{e.title ?? e.role}</h4>
@@ -17,14 +17,16 @@ function Timeline({ entries }) {
             {e.org}
             {e.place ? ` · ${e.place}` : ""}
           </div>
-          <ul className="mt-3 space-y-1.5 text-sm text-ink-muted">
-            {e.points.map((p) => (
-              <li key={p} className="flex gap-2">
-                <span className="mt-2 size-1 shrink-0 rounded-full bg-ink-faint" />
-                {p}
-              </li>
-            ))}
-          </ul>
+          {e.points.length > 0 && (
+            <ul className="mt-3 space-y-1.5 text-sm text-ink-muted">
+              {e.points.map((p) => (
+                <li key={p} className="flex gap-2">
+                  <span className="mt-2 size-1 shrink-0 rounded-full bg-ink-faint" />
+                  {p}
+                </li>
+              ))}
+            </ul>
+          )}
         </Reveal>
       ))}
     </div>

@@ -1,26 +1,35 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a0b" />
+    <script>
+      // Set theme before paint to avoid a flash.
+      try {
+        var stored = localStorage.getItem("theme");
+        var dark = stored
+          ? stored === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      } catch (e) {}
+    </script>
 
-    <title>Hluf Abebe — Full-Stack Developer</title>
+    <title>Hluf Abebe — Backend Developer</title>
     <meta
       name="description"
-      content="Hluf Abebe is a full-stack web developer based in Addis Ababa, Ethiopia, building fast, reliable web applications with React, Node.js and TypeScript."
+      content="Hluf Abebe is a backend developer with 4+ years building and scaling fintech systems with Node.js, NestJS, Go, PostgreSQL and MongoDB."
     />
     <meta name="author" content="Hluf Abebe" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Hluf Abebe — Full-Stack Developer" />
+    <meta property="og:title" content="Hluf Abebe — Backend Developer" />
     <meta
       property="og:description"
-      content="Full-stack web developer building fast, reliable web applications with React, Node.js and TypeScript."
+      content="Backend developer building and scaling fintech systems — microservices, distributed systems, gRPC and real-time services."
     />
-    <meta property="og:image" content="/img/hLUF.JPG" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

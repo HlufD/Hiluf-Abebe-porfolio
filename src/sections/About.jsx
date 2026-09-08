@@ -7,8 +7,9 @@ export default function About() {
     <Section id="about" eyebrow="01 — About" title="A bit about me">
       <div className="flex flex-col gap-12">
         <Reveal className="space-y-4 text-base leading-relaxed text-ink-muted">
-          <p>{profile.about}</p>
-          <p>{profile.summary}</p>
+          {profile.about.map((para) => (
+            <p key={para.slice(0, 24)}>{para}</p>
+          ))}
         </Reveal>
 
         <Reveal className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-4">

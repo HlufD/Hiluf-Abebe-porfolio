@@ -100,15 +100,12 @@ export default function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="relative h-[320px] overflow-hidden rounded-2xl border border-line bg-surface/40 sm:h-[400px] lg:h-[460px]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="relative -mx-6 h-[340px] sm:h-[420px] lg:mx-0 lg:h-[520px]"
         >
           <DevRoomCanvas className="size-full" />
-          <span className="pointer-events-none absolute bottom-3 left-3 font-mono text-[10px] uppercase tracking-widest text-ink-faint">
-            ~/dev-room
-          </span>
         </motion.div>
       </div>
     </section>

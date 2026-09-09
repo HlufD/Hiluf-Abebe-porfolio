@@ -1,7 +1,7 @@
 export const profile = {
   name: "Hluf Abebe",
   role: "Backend Developer",
-  roles: ["Backend developer", "Distributed systems", "Fintech engineering"],
+  roles: ["Backend Developer", "Distributed Systems", "Fintech Engineering"],
   location: "Addis Ababa, Ethiopia",
   email: "hlufabebe2015@gmail.com",
   phone: "+251 937 941 318",
